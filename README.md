@@ -32,6 +32,7 @@ Follow these steps to set up and run the project on your local machine:
 ```sh
 git clone https://github.com/yourusername/poll-hub.git
 cd poll-hub
+```
 
 
 ### 2️⃣ Create a Virtual Environment (Recommended)
@@ -39,31 +40,36 @@ cd poll-hub
 python3 -m venv env
 source env/bin/activate  # On MacOS/Linux
 env\Scripts\activate     # On Windows
-
+```
 
 ### 3️⃣ Install Required Dependencies
 ```sh
 pip install -r requirements.txt
+```
 
 ### 4️⃣ Apply Database Migrations
 ```sh
 python manage.py makemigrations
 python manage.py migrate
+```
 
 ### 5️⃣ Create a Superuser (for Admin Panel)
 ```sh
 python manage.py createsuperuser
+```
 
 Follow the instructions to create an admin user.
 
 ### 6️⃣ Collect Static Files
 ```sh
 python manage.py collectstatic --noinput
+```
 
 ### 7️⃣ Run the Development Server
 ```sh
 python manage.py runserver
 Visit http://127.0.0.1:8000/ in your browser.
+```
 
 
 ## 🖼 Screenshots
