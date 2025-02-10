@@ -1,0 +1,20 @@
+{% extends "polls/base_dark.html" %}
+{% block title %}Homepage{% endblock %}
+{% block main %}
+<div class="panel dark-panel">
+    <div class="panel-heading dark-panel-heading">
+        <h3 class="panel-title">Available Polls</h3>
+    </div>
+    <ul class="list-group dark-list">
+        {% for poll in polls %}
+        <li class="list-group-item dark-list-item">
+            <strong>{{ poll.query_text }}</strong>
+            <div>
+                <a href="{% url 'vote_poll' poll.id %}" class="btn dark-button">Vote</a>
+                <a href="{% url 'poll_results' poll.id %}" class="btn dark-button">View Results</a>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,95 @@
+/* Overall Page Styling */
+body.dark-theme {
+    background-color: #181818;
+    color: #E0E0E0;
+    font-family: 'Calibri', sans-serif;
+}
+
+/* Navbar Styling */
+.navbar-dark-mode {
+    background-color: #252525;
+    border-bottom: 2px solid #3A3A3A;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Centered and Styled Poll Hub Heading */
+.navbar-dark-mode .navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    display: block;
+}
+
+/* Available Polls Title */
+.dark-panel-heading {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #E0E0E0;
+    border-bottom: 2px solid #555;
+}
+
+/* Poll List Styling */
+.dark-list {
+    padding: 0;
+    list-style-type: none;
+}
+
+.dark-list-item {
+    background-color: #2C2C2C;
+    padding: 25px; /* Increased padding for more spacing */
+    margin: 15px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Increased spacing between poll question and buttons */
+.dark-list-item strong {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 15px; /* Adds space below the question */
+}
+
+.dark-list-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
+}
+
+/* Buttons */
+.dark-button {
+    background-color: #3A3A3A;
+    color: #E0E0E0;
+    border: 1px solid #555;
+    padding: 12px 18px; /* Slightly increased padding */
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-right: 13px; /* Space between buttons */
+    transition: background 0.2s, color 0.2s;
+}
+
+.dark-button:hover {
+    background-color: #555;
+    color: #FFFFFF;
+}
+
+/* Subtle contrast for poll options on hover */
+.dark-list-item:hover {
+    background-color: #3A3A3A;  /* Softer gray */
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Softer hover effect for buttons */
+.dark-button:hover {
+    background-color: #5d5b5b;  /* Gentle contrast */
+    color: #F0F0F0;
+    border: 1px solid #5A5A5A;
+    transition: background-color 0.3s ease-in-out;
+}
+

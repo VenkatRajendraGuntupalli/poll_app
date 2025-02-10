@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/dark_style.css' %}" />
+</head>
+<body class="dark-theme">
+    <nav class="navbar navbar-dark-mode">
+        <div class="container">
+            <a class="navbar-brand dark-text" href="{% url 'homepage' %}">Poll Hub</a>
+        </div>
+    </nav>
+    <div class="container dark-container">
+        {% block main %}{% endblock %}
+    </div>
+</body>
+</html>

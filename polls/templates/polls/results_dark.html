@@ -1,0 +1,20 @@
+{% extends "polls/base_dark.html" %}
+{% block title %}Results{% endblock %}
+{% block main %}
+<div class="panel dark-panel">
+    <div class="panel-heading dark-panel-heading">
+        <h3 class="panel-title">Poll Results</h3>
+    </div>
+    <div class="panel-body dark-body">
+        <h3>{{ poll.query_text }}</h3>
+    </div>
+    <ul class="list-group dark-list">
+        <li class="list-group-item dark-list-item">{{ poll.choice_x }} — <strong>{{ poll.votes_choice_x }}</strong></li>
+        <li class="list-group-item dark-list-item">{{ poll.choice_y }} — <strong>{{ poll.votes_choice_y }}</strong></li>
+        <li class="list-group-item dark-list-item">{{ poll.choice_z }} — <strong>{{ poll.votes_choice_z }}</strong></li>
+    </ul>
+    <div class="panel-footer dark-panel-footer">
+        Total Votes — <strong>{{ poll.total_votes }}</strong>
+    </div>
+</div>
+{% endblock %}

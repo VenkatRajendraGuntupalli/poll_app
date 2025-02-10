@@ -1,0 +1,40 @@
+{% extends "polls/base_dark.html" %}
+{% load widget_tweaks %}
+{% block title %}Create Poll{% endblock %}
+{% block main %}
+<div class="panel dark-panel">
+    <div class="panel-heading dark-panel-heading">
+        <h3 class="panel-title">Create A New Poll</h3>
+    </div>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="panel-body dark-body">
+            <div class="form-group">
+                <label for="query_text">Enter Poll Question</label>
+                {% render_field form.query_text rows="3" class="form-control dark-input" %}
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label for="choice_x">Option 1</label>
+                        {% render_field form.choice_x class="form-control dark-input" %}
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label for="choice_y">Option 2</label>
+                        {% render_field form.choice_y class="form-control dark-input" %}
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label for="choice_z">Option 3</label>
+                        {% render_field form.choice_z class="form-control dark-input" %}
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn dark-button">Submit</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
