@@ -19,8 +19,7 @@ The project is built using the following technologies:
 ---
 
 ## **📂 Project Structure**
-<img width="524" alt="image" src="https://github.com/user-attachments/assets/88c232c5-8e11-4473-9ff3-29f0bfafc578" />
-
+<img width="503" alt="image" src="https://github.com/user-attachments/assets/f70ca360-1ac6-4f27-a2f5-bdd3b58f3978" />
 
 ---
 
